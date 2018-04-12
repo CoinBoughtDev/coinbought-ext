@@ -1,0 +1,40 @@
+<div id="zn-root" class="container">
+    <div class="row popup-header">
+        <a href="https://coinbought.com/" target="_blank">
+            <h3><img src="logo-48.png"> <span style="vertical-align: middle;">CoinBought</span></h3>
+        </a>
+    </div>
+    <div class="row text-center" style="padding-top: 10px; padding-bottom:10px;">
+      <div class="col-xs-12">
+        {{#if currentMarket}}
+          {{#if addingToCart}}
+            <h4>Adding Items to Cart</h4>
+            <div style="width:100%" class="la-ball-elastic-dots la-2x"><div></div><div></div><div></div><div></div><div></div></div>
+            <p>This may take a minute or two.<br>You can browse the web normally while CoinBought works.<br>A new tab will open when we are finished.</p>
+          {{else}}
+            {{#if cartLoaded}}
+              {{#if cart}}
+                <p class="text-left">Everything you currently have in your {{currentMarket.humanReadable}} cart:</p>
+                <ul class="list-unstyled list-cart">
+                  {{#each cart}}
+                    <li><b>{{quantity}} x {{asin}}</b> {{title}}</li>
+                  {{/each}}
+                </ul>
+                <button id="checkout" type="submit" class="center-block btn btn-info checkout-btn">Checkout with CoinBought</button>
+              {{else}}
+                <h4>Your Cart is Empty</h4>
+                <p>Add something to your {{currentMarket.humanReadable}} cart and CoinBought will help you <br>get your items with crypto!</p>
+              {{/if}}
+            {{else}}
+              <h4>Loading Cart</h4>
+              <div style="width:100%" class="la-ball-elastic-dots la-2x"><div></div><div></div><div></div><div></div><div></div></div>
+              <p>This should only take a moment.</p>
+            {{/if}}
+        {{/if}}
+        {{else}}
+          <p>CoinBought can help your order anything you want<br>from Amazon with crypto!</p>
+          <p>Simply visit <a target="_blank" href="https://www.amazon.com">Amazon.com</a>, <a target="_blank"  href="https://www.amazon.co.uk">Amazon.co.uk</a>, or <a target="_blank"  href="https://www.amazon.de">Amazon.de</a><br>and add items to your cart!</p>
+        {{/if}}
+      </div>
+    </div>
+</div>
