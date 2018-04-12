@@ -22,7 +22,7 @@
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
     "handlebars": "^4.0.10",
-    "jquery": "^2.2.3",
+    "jquery": "^3.0.0",
     "lodash": "^4.11.1",
     "uglifyify": "^3.0.4"
   }
