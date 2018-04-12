@@ -1,4 +1,4 @@
-# coinbought - Buy anything off of Amazon with Bitcoin, Ethereum, Litecoin, Monero, Bitcoin Cash and more!
+# CoinBought - Buy anything off of Amazon with Bitcoin, Ethereum, Litecoin, Monero, Bitcoin Cash and more!
 
 To get started:
 
